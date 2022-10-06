@@ -36,13 +36,22 @@
         animation: jump 500ms ease-out;
     }
 
+    .clouds2 {
+        position: absolute;
+        bottom: 2 ;
+        width: 250px;
+        animation: pipe-animation 4s infinite linear;
+    }
+
+
     .clouds {
         position: absolute;
         bottom: 1 ;
         width: 350px;
-        animation: pipe-animation 2s infinite linear;
+        animation: pipe-animation 3s infinite linear;
     }
 
+    
      @keyframes pipe-animation {
         from {
             right: -80px;
@@ -70,6 +79,16 @@
     }
 
     @keyframes clouds-animation {
+        from {
+            right: -120px;
+        }
+
+        to {
+            right: 100%;
+        }
+    }
+
+    @keyframes clouds-animation2 {
         from {
             right: -120px;
         }
